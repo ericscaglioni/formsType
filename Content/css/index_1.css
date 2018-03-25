@@ -4,6 +4,12 @@
 
 body {
 	background-color: #EEE;
+	overflow-x: hidden;
+}
+
+input[type="button"], input[type="submit"],
+input[type="text"] {
+   outline: none !important;
 }
 
 .wrapper {
@@ -15,8 +21,12 @@ body {
 }
 
 .page-head {
-	padding: 20px 25px 10px;
+	padding: 0px 25px 10px;
 	position: relative;
+}
+
+.page-head .page-head-title {
+	margin-top: 0;
 }
 
 .card {
@@ -39,7 +49,7 @@ body {
 }
 
 .card-border-color-primary {
-	border-top-color: #4285F4;
+	border-top-color: #007f7b;
 }
 
 .card-header {
@@ -80,3 +90,91 @@ body {
 	margin: auto;
 	width: 60%;
 }
+
+.command-bar {
+	padding: 0 25px;
+}
+
+.command-bar.affix {
+  top: 51px;
+  width: 100%;
+  z-index: 9999 !important;
+  background-color: #eeb211;
+  padding: 10px;
+}
+
+.command-bar .btn-default {
+	background-color: #f8f8f8;
+}
+
+.command-bar .btn-default:hover {
+	background-color: #f2f2f2;
+}
+
+.collapsed-command-bar {
+	width: 100%;
+	height: 50px;
+}
+
+.nav.navbar-nav.command-bar-menu {
+	margin: 0;
+	background-color: #bbb;
+}
+
+.command-bar-menu li a {
+	color: #007f7b;
+}
+
+.command-bar-menu li a:hover {
+	border-left: 5px solid #eeb211;
+}
+
+.command-bar-menu {
+	border-top: 1px solid #aaa;
+}
+
+button.navbar-toggle {
+	background-color: #f8f8f8;
+}
+
+button.navbar-toggle span {
+	background-color: #007f7b;
+}
+
+.btn-primary-color {
+	background-color: #007f7b
+}
+
+.btn-primary-color:hover {
+	background-color: #006865;
+}
+
+.btn-primary-color:active, .btn-primary-color:focus {
+	background-color: #45A19F !important;
+	border-color: transparent;
+}
+
+.affixed-command-bar.affix {
+	z-index: 9999;
+	top: 100px;
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.collapsed-command-bar {
+		background-color: #bbb;
+	}
+
+	.collapsed-command-bar.affix {
+		z-index: 9999;
+	}
+
+	.page-head .page-head-title {
+		margin-top: 20px;
+	}
+}
+
+/*
+	Vale cor primária: #007f7b
+	Vale cor secundária: #eeb211
+*/
